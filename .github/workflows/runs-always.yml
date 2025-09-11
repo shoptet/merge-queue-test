@@ -1,4 +1,4 @@
-name: Calculate Primes
+name: Runs always
 
 on:
   push:
