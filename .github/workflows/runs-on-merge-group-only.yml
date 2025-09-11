@@ -1,0 +1,21 @@
+name: Run on Merge Group Only
+
+on:
+  merge_group:
+    types: [checks_requested]
+    branches:
+      - main
+
+jobs:
+  calculate-primes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up permissions
+      run: chmod +x calculate.sh
+
+    - name: Run calculate.sh
+      run: ./calculate.sh
