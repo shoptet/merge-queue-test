@@ -18,3 +18,4 @@ print_primes() {
 }
 
 print_primes
+
