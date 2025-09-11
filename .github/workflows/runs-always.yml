@@ -1,4 +1,4 @@
-name: Runs always
+name: Run always
 
 on:
   push:
