@@ -21,6 +21,7 @@ jobs:
       run: chmod +x calculate.sh
 
     - name: print github context
+      shell: bash
       run: |
         echo "$GITHUB_CONTEXT"
 
