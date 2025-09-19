@@ -23,7 +23,7 @@ jobs:
     - name: print github context
       shell: bash
       run: |
-        echo "$GITHUB_CONTEXT"
+        echo "${{ toJson(github) }}"
 
     - name: Run calculate.sh
       run: ./calculate.sh
