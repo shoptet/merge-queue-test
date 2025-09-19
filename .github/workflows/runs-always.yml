@@ -20,5 +20,9 @@ jobs:
     - name: Set up permissions
       run: chmod +x calculate.sh
 
+    - name: print github context
+      run: |
+        echo "$GITHUB_CONTEXT"
+
     - name: Run calculate.sh
       run: ./calculate.sh
